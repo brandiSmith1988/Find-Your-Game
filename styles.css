@@ -210,57 +210,145 @@ nav li{
     border-width: 10px;
     
 }
-.platformer-container{
+.genre-container{
     display: grid;
     column-count: 3;
-    grid-template-rows: 30% 30% 30%;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto auto;
     border-color: teal;
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: 10px;
 }
-
-.platformer-title{
+.game-characters-image{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 40px;
+}
+.game-genre-title{
     
     font-size: 25px;
     color: black;
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 3;
+
 }
-.platformer-intro{
+.genre-intro{
     
     width: 500px;
+    font-size: 20px;
     padding-bottom: 50px;
     grid-row-start: 2;
     grid-row-end: 2;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 3;
 }
-.plat-games-container{
+.game1-container{
     display: grid;
-    column-count: 3;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    column-count: 2;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 45% 45%;
     justify-content: space-around;
-    margin-top: 50px;
+    border-bottom-style: solid;
+    border-color: teal;
+    border-width: 10px;
 
 }
-.platformer-game1-about{
+.game1-about{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
     margin-left: 40px;
     width: 450px;
+   
 }
-.platformer-game1-video{
+.game1-video{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    margin-left: 40px;
+  
+}
+.game2-container{
+    display: grid;
+    column-count: 2;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-color: teal;
+    border-width: 10px;
+
+}
+.game2-about{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-right: 40px;
+    width: 450px;
+   
+}
+.game2-video{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 40px;
+  
+}
+.game3-container{
+    display: grid;
+    column-count: 2;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-color: teal;
+    border-width: 10px;
+
+}
+.game3-about{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 40px;
+    width: 450px;
+   
+}
+.game3-video{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-left: 40px;
+   
+}
+.bottom-page{
+    display: grid;
+    column-count: 2;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+}
+.form{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-left: 40px;
+}
+.bottom-picture{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
     margin-left: 40px;
 }
 p.sources{
@@ -275,7 +363,85 @@ p.sources{
     height: 2.5rem;
     padding: 20px;     
 }
+button{
+    padding: 10px 20px 10px 20px;
+    color: purple;
+    background-color: #55ACEE;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 2px solid teal;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+fieldset{
+    margin-bottom: 30px;
+    padding: 16px;
+    border: 1px solid teal;
+}
+form{
+    max-width: 600px;
+    padding: 10px 20px;
+    border: 1px solid teal;
+}
 
+input{
+    outline: none;
+}
+
+input:name-invalid,
+select:name-invalid,
+textarea:name-invalid{
+    border: 2px solid maroon;
+}
+
+input:focus:not(:name-invalid),
+select:focus,
+textarea:focus{
+    outline: purple 2px solid;
+    background-color: var(--second-background);
+}
+input,
+textarea,
+select{
+    border: none;
+    margin-top: 10px;
+    padding: 0.6rem;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: var(--text-color-1);
+    font-size: 1rem;
+}
+textarea,
+select[multiple]{
+    resize: none;
+}
+input[type="checkbox"]{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+}
+legend{
+    font-size: 1.4em;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+label label{
+    font-size: 1em;
+    margin-left: 12px;
+}
+label label:first-of-type{
+    margin-top: 10px;
+}
+.required{
+    color: maroon;
+}
 @media screen and (max-width: 320px)
 {
   main{
