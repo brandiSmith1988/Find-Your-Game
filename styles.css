@@ -18,18 +18,60 @@ body:not(nav) {
 body{
     font-family: "Black ops one";
     background-color: var(--second-background);
-    text-align: center;
+    
 
 }
-#home{
-    display: grid;
-    max-width: 650px;
-    grid-template-rows: 1fr, 1fr;
-    
+.find-your-game{
+    justify-content: left;
+    font-size: 15px;
+    color: var(--text-color-2);
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  
 }
-div.home-nav-bar {
+.header{
+    padding-top: 20px;
+    min-height: 75vh;
+    width: 100%;
+    background-image: url(images/home-page-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.home-nav-bar {
+    border-color: var(--first-background); 
+    margin-left: 30px;
+    border-width: 40px;
     font-size: 1.2 rem;
-    background-color: var(--first-background);
+    background-color: black;
+}
+
+.home{
+    color: var(--text-color-2);
+}
+.rpg{
+    color: var(--text-color-2);
+}
+
+.platformer{
+    color: var(--text-color-2);
+}
+
+.racing{
+    color: var(--text-color-2);
+}
+
+.multiplayer{
+    color: var(--text-color-2);
+}
+
+.action{
+    color: var(--text-color-2);
+}
+
+.shooter{
     color: var(--text-color-2);
 }
 nav a {
@@ -47,16 +89,58 @@ nav li{
     margin-left: 60px;
 }
 
-div.social-media-bar {
-    border-width: 20px;
-    border-style: solid;
-    border-color: var(--second-background);
-    color: black;
-}
+.social-media-bar {
+   
+        position: absolute; 
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      
+      .social-media-bar a {
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+      
+      .social-media-bar a:hover {
+        background-color: #000;
+      }
+      
+      .facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .youtube {
+        background: #bb0000;
+        color: white;
+      }
 
-h1{
-    font-weight: 40;
-    font-size: 75px; 
+
+.find{
+    font-weight: 30px;
+    font-size: 100px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
@@ -65,27 +149,91 @@ h1{
     text-align: left;
     margin-left: 0px;
     margin-top: 40px;
-    border-width: 70px;
+    border-width: 120px;
     border-style: solid;
     border-color: var(--first-background);
     background-color: var(--first-background);    
 }
 
-figure.home-image{
-    width: min(100%, 450px);
-    height: max(100%, 200px);
-    justify-content: center;
+
+.home-page-paragraph {
+    display: grid;
+    column-count: 4;
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+        
+}
+.intro-image{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.paragraph-title{
+    text-align: center;
+    width: 1200px;
+    font-size: 35px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: hotpink;
+    margin: auto;
 }
 
-.home-page-paragraph > section{
-        display: column;
-        width: 400px;
-        justify-content: right;
-        padding-bottom: 40px;
+.content1{
+    width: 700px;
+    text-align: left;
+    font-size: 25px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+    
 }
-.home-page-paragraph > h2{
-    font-size: 45px;
-    display:inline;
+.content2{
+    width: 700px;
+    text-align: left;
+    font-size: 25px;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+}
+.platformer-title{
+    font-size: 25px;
+    color: black;
+}
+.platformer-intro{
+    width: 1200px;
+    padding-bottom: 50px;
+}
+.plat-games-container{
+    display: grid;
+    column-count: 3;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+
+}
+.platformer-game1-about{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 40px;
+    width: 450px;
+}
+.platformer-game1-video{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 40px;
 }
 p.sources{
     padding: 20px;
@@ -98,4 +246,19 @@ p.sources{
     width: 100%;
     height: 2.5rem;
     padding: 20px;     
+}
+
+@media screen and (max-width: 320px)
+{
+  main{
+    padding: 10px;
+    margin: 10px;
+  }
+  h1{
+    padding: 20px;
+
+  }
+  .home-nav-bar{
+    flex-direction: column;
+  }
 }
