@@ -16,6 +16,8 @@ body:not(nav) {
   }
 
 body{
+    
+
     font-family: "Black ops one";
     background-color: var(--second-background);
     
