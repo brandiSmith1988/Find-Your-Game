@@ -169,12 +169,13 @@ nav li{
 
 }
 .intro-image{
-    width: 300px;
-    height: 533px;
+    width: auto;
+    height: 100%;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 0;
     grid-column-end: 1;
+
     
  
 }
@@ -228,6 +229,8 @@ nav li{
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 40px;
+    width: auto;
+    height: 100%;
 }
 .game-genre-title{
     
@@ -353,11 +356,10 @@ nav li{
     grid-column-start: 2;
     grid-column-end: 2;
     margin-left: 40px;
+    width: auto;
+    height: 100%;
 }
-p.sources{
-    padding: 20px;
-    justify-content:flex-end;
-}
+
 .footer{
     text-align: center;
     position: static;
