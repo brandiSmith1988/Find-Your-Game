@@ -445,7 +445,7 @@ label label:first-of-type{
 .required{
     color: maroon;
 }
-@media screen and (max-width: 750px)
+@media screen and (max-width: 850px)
 {
   main{
     padding: 10px;
@@ -460,4 +460,9 @@ label label:first-of-type{
   .home-nav-bar{
     flex-direction: column;
   }
+
+  .home-page-paragraph {
+    flex-direction: column;
+}
+
 }
