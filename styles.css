@@ -550,4 +550,7 @@ label label:first-of-type{
         .game3-video{
             width: fit-content;
         }
+        .header{
+            width: 320px;
+        }
 }
