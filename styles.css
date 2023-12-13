@@ -472,6 +472,9 @@ label label:first-of-type{
     .home-nav-bar{
         font-size: .5rem;
     }
+    .social-media-bar{
+        transform: translateY(-75%);
+    }
 }
 
 @media only screen and (min-width: 768px)  {
