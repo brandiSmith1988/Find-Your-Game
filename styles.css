@@ -95,24 +95,102 @@ nav li{
     .intro-image {
         width: 100%;
     }
+    .game-characters-image{
+        width: 100%;
+    }
 
     .bottom-picture {
         width: 100%;
     }
 
     .game1-video{
-        width: 100%;
+        width:250px;
         height: auto;
     }
 
     .game2-video{
-        width: 100%;
+        width: 250px;
         height: auto;
     }
 
     .game3-video{
+        width: 250px;
+        height: auto;
+    }
+    button{
+        padding: 10px 20px 10px 20px;
+        color: purple;
+        background-color: #55ACEE;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        border: 2px solid teal;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    fieldset{
+        margin: 30px;
+        padding: 16px;
+        border: 1px solid teal;
+
+    }
+    form{
+        width: 100%;
+        margin: 20px;
+        padding: 10px 20px;
+        border: 1px solid teal;
+    }
+    
+    input{
+        outline: none;
+    }
+    
+    select:focus,
+    textarea:focus{
+        outline: purple 2px solid;
+        background-color: var(--second-background);
+    }
+    input,
+    textarea,
+    select{
+        border: none;
+        margin-top: 10px;
+        padding: 3px;
         width: 100%;
         height: auto;
+        background-color: white;
+        color: var(--text-color-1);
+        font-size: 1rem;
+       
+    }
+    textarea,
+    select[multiple]{
+        resize: none;
+    }
+    input[type="checkbox"]{
+        margin-left: 3px;
+        margin-right: 3px;
+        width: auto;
+    }
+    legend{
+        font-size: 1.4em;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    label label{
+        font-size: 1em;
+        margin-left: 12px;
+    }
+    label label:first-of-type{
+        margin-top: 10px;
+    }
+    .required{
+        color: maroon;
     }
 
  
@@ -168,7 +246,8 @@ nav li{
 
     .nem {
         padding-top: 0px;
-        width: 75px;
+        width: 100%;
+        height: auto;
         float: left;
 
     }
