@@ -5,15 +5,16 @@
     --text-color-2: #44FF00;
     
   }
-*{
+
+  body:not(nav) {
+    font-size: clamp(0.75rem, 2vw, 1rem );
+  }
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body:not(nav) {
-    font-size: clamp(0.75rem, 2vw, 1rem );
-  }
 
 body{
     
@@ -23,6 +24,7 @@ body{
     
 
 }
+
 .find-your-game{
     justify-content: left;
     font-size: 15px;
@@ -465,31 +467,23 @@ label label:first-of-type{
   }
 
 }*/
-@media only screen and (min-width: 320px)  { 
-    body{ 
-        font-size: 12px; 
-    } 
-    .home-nav-bar{
-        font-size: .5rem;
+@media only screen and (max-width: 320px)  { 
+   
+    main {
+        flex-direction: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .find{
-        font-size: 25px;
+  
+    nav ul {
+    flex-direction: column;
+    padding: 40px;
+  }
+    .find {
+        font-size: 45px;
     }
-}
 
-@media only screen and (min-width: 768px)  {
-     body{ 
-        font-size: 14px; 
-    } 
-}
+    div{
+        flex-direction: column;
+    }
 
-@media only screen and (min-width: 1024px) {
-     body{ 
-        font-size: 16px; 
-    } 
-}
-
-@media only screen and (min-width: 1900px) { 
-    
-    
 }
